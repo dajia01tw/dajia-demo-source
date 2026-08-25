@@ -1,0 +1,28 @@
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>聯絡我們</h1>
+    </div>
+  </div>
+  <div class="wrap contact-layout">
+    <div class="contact-card">
+      <h2>{{OFFICE_NAME}}</h2>
+      <ul class="contact-info">
+        <li><strong>地址：</strong>{{ADDRESS}}</li>
+        <li><strong>電話：</strong><a href="tel:{{PHONE_TEL}}">{{PHONE}}</a></li>
+        <li><strong>手機：</strong><a href="tel:{{MOBILE_TEL}}">{{MOBILE}}</a></li>
+        <li><strong>Email：</strong><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+        <li><strong>營業時間：</strong>{{HOURS}}</li>
+      </ul>
+      <div class="static-page-body">{{CONTENT_HTML}}</div>
+    </div>
+    <div class="contact-map">
+      <iframe
+        title="事務所位置地圖"
+        src="https://www.google.com/maps?q={{ADDRESS_ENCODED}}&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</main>
